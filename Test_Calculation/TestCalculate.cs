@@ -129,6 +129,32 @@ namespace Test_Calculation
             Assert.IsTrue(result != result1);
         }
 
+        [TestMethod]
+        [TestCategory("Multiplication")]
+        // This Test method checks that output is zero if one of the number is zero
+        public void TestOutputShouldBeZeroIfOneValueIsZero()
+        {
+            double left = 20;
+            double right = 0;
+
+            double result = Calculator_ClassLibrary.LibCalculator.mul(left, right);
+
+            Assert.AreEqual(0, result);
+        }
+
+
+        [TestMethod]
+        [TestCategory("Multiplication")]
+        // This Test method checks that if numbers are positive then it should returns positive result
+        public void TestMultiplyingPositiveNumberShouldReturnPositiveResult()
+        {
+            double left = 20;
+            double right = 10;
+
+            double result = Calculator_ClassLibrary.LibCalculator.mul(left, right);
+
+            Assert.AreEqual(200, result);
+        }
 
     }
 }
