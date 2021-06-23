@@ -19,6 +19,17 @@ namespace Test_Calculation
 
         [TestMethod]
         [TestCategory("Addition")]
+        // This Test method checks whether adding two positive number returns a positive result or not
+        public void TestingAddingNegativeNumbersReturnPositiveResult()
+        {
+            double left = -3;
+            double right = -2;
+            double result = Calculator_ClassLibrary.LibCalculator.add(left, right);
+            Assert.IsTrue(result<0);
+        }
+
+        [TestMethod]
+        [TestCategory("Addition")]
         // This Test method check whether adding numbers having double datatypes returns double or not
         public void TestAddingDoubleReturnsDouble()
         {
@@ -114,6 +125,20 @@ namespace Test_Calculation
 
         }
 
+        [TestMethod]
+        [TestCategory("Division")]
+        // This Test method check whether number divided by zero gives exception or not
+        public void DivdingByNegativeNumberReturnsValue()
+        {
+            double left = 20;
+            double right = -2;
+
+            double result = Calculator_ClassLibrary.LibCalculator.div(left, right);
+
+            Assert.AreEqual(-10,result);
+
+        }
+
 
 
         [TestMethod]
@@ -169,5 +194,7 @@ namespace Test_Calculation
             Assert.IsTrue(result == result1);
         }
 
+
+       
     }
 }
