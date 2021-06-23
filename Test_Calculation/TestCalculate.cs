@@ -156,5 +156,18 @@ namespace Test_Calculation
             Assert.AreEqual(200, result);
         }
 
+        [TestMethod]
+        [TestCategory("Multiplication")]
+        // This Test method check output would not be differnt if order of the numbers changed
+        public void TestOutputDoesNotDependOnNumbersOrder()
+        {
+            double left = 20;
+            double right = 10;
+
+            double result = Calculator_ClassLibrary.LibCalculator.mul(left, right);
+            double result1 = Calculator_ClassLibrary.LibCalculator.mul(right, left);
+            Assert.IsTrue(result == result1);
+        }
+
     }
 }
