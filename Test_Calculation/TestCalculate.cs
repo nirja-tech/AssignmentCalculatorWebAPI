@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace Test_Calculation
 {
@@ -73,6 +74,34 @@ namespace Test_Calculation
             double result = Calculator_ClassLibrary.LibCalculator.sub(left, right);
 
             Assert.AreEqual(1, result);
+        }
+
+
+        [TestMethod]
+        [TestCategory("Division")]
+        // This Test method check whether number divided by zero gives exception or not
+        public void DivdingByZaroResultException()
+        {
+            double left = 3;
+            double right = 0;
+
+            Assert.ThrowsException<DivideByZeroException>(() => Calculator_ClassLibrary.LibCalculator.div(left, right));
+
+        }
+
+
+
+        [TestMethod]
+        [TestCategory("Division")]
+        // This Test method check output is differnt if order of the numbers changed
+        public void TestOutputDependsOnNumbersOrder()
+        {
+            double left = 20;
+            double right = 2;
+
+            double result = Calculator_ClassLibrary.LibCalculator.div(left, right);
+            double result1 = Calculator_ClassLibrary.LibCalculator.add(right, left);
+            Assert.IsTrue(result != result1);
         }
 
 
