@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssignmentCalculatorWebAPI", "AssignmentCalculatorWebAPI\AssignmentCalculatorWebAPI.csproj", "{C6C96560-239C-4C22-8866-2E6298CD7F9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssignmentCalculatorWebAPI", "AssignmentCalculatorWebAPI\AssignmentCalculatorWebAPI.csproj", "{C6C96560-239C-4C22-8866-2E6298CD7F9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator_ClassLibrary", "Calculator_ClassLibrary\Calculator_ClassLibrary.csproj", "{19E70523-5CFF-4305-B626-C9C5E863B277}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator_ClassLibrary", "Calculator_ClassLibrary\Calculator_ClassLibrary.csproj", "{19E70523-5CFF-4305-B626-C9C5E863B277}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_Calculation", "Test_Calculation\Test_Calculation.csproj", "{282CC201-09F6-42A8-8B6F-9E9F9A581E38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{19E70523-5CFF-4305-B626-C9C5E863B277}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19E70523-5CFF-4305-B626-C9C5E863B277}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19E70523-5CFF-4305-B626-C9C5E863B277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{282CC201-09F6-42A8-8B6F-9E9F9A581E38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{282CC201-09F6-42A8-8B6F-9E9F9A581E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{282CC201-09F6-42A8-8B6F-9E9F9A581E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{282CC201-09F6-42A8-8B6F-9E9F9A581E38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
