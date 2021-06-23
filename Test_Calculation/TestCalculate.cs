@@ -50,5 +50,31 @@ namespace Test_Calculation
             Assert.IsTrue(result == result1);
         }
 
+        [TestMethod]
+        [TestCategory("Subtraction")]
+        // This Test method check big number subtracts from small number returns negative result
+        public void TestLargerNumberSubtractedFromSmallerRetrunNegative()
+        {
+            double left = 2;
+            double right = 3;
+            double result = Calculator_ClassLibrary.LibCalculator.sub(left, right);
+
+            Assert.AreEqual(-1, result);
+        }
+
+
+        [TestMethod]
+        [TestCategory("Subtraction")]
+        // This Test method check small number subtracts from big number returns positive result
+        public void TestSmallerNumberSubtractedFromLargerRetrunPositive()
+        {
+            double left = 3;
+            double right = 2;
+            double result = Calculator_ClassLibrary.LibCalculator.sub(left, right);
+
+            Assert.AreEqual(1, result);
+        }
+
+
     }
 }
