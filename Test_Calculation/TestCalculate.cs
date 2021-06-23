@@ -78,6 +78,31 @@ namespace Test_Calculation
 
 
         [TestMethod]
+        [TestCategory("Subtraction")]
+        // This Test method check when Similar numbers Subtract then result is zero
+        public void TestResultShouldBeZaroIfNumbersAreSimilar()
+        {
+            double left = 3;
+            double right = 3;
+            double result = Calculator_ClassLibrary.LibCalculator.sub(left, right);
+
+            Assert.AreEqual(0, result);
+        }
+
+        [TestMethod]
+        [TestCategory("Subtraction")]
+        // Returns Zero if Both Numbers are zero
+        public void TestRsultShouldBeZeroIfBothNumbersAreZero()
+        {
+            double left = 0;
+            double right = 0;
+            double result = Calculator_ClassLibrary.LibCalculator.sub(left, right);
+
+            Assert.AreEqual(0, result);
+        }
+
+
+        [TestMethod]
         [TestCategory("Division")]
         // This Test method check whether number divided by zero gives exception or not
         public void DivdingByZaroResultException()
