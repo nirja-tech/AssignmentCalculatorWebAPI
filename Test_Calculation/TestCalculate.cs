@@ -125,19 +125,7 @@ namespace Test_Calculation
 
         }
 
-        [TestMethod]
-        [TestCategory("Division")]
-        // This Test method check whether number divided by zero gives exception or not
-        public void DivdingByNegativeNumberReturnsValue()
-        {
-            double left = 20;
-            double right = -2;
-
-            double result = Calculator_ClassLibrary.LibCalculator.div(left, right);
-
-            Assert.AreEqual(-10,result);
-
-        }
+       
 
 
 
@@ -194,7 +182,10 @@ namespace Test_Calculation
             Assert.IsTrue(result == result1);
         }
 
+        
 
-       
+
+
+
     }
 }
